@@ -1,3 +1,5 @@
+(toggle-frame-maximized)
+(exec-path-from-shell-initialize)
 (projectile-global-mode)
 
 (require 'ido)
@@ -16,8 +18,8 @@
 (setq dired-omit-files (concat dired-omit-files "\\|^\\..+$"))
 (setq dired-dwim-target t)
 
-(toggle-frame-maximized)
-
+;; Prevent emacs insert tab instead of space
+(setq-default indent-tabs-mode nil)
 (require 'simple-secrets)
 (defun active-password-manager ()
   "active a simple-secert mode"
@@ -29,4 +31,4 @@
 (setq company-dabbrev-downcase nil)
 
 
-(provide 'global-mode)
+(provide 'global-config)

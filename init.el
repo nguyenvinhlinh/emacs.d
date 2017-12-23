@@ -19,6 +19,6 @@
 (add-to-list 'load-path "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/lib/")
 (require 'theme)
-(require 'global-mode)
+(require 'global-config)
 (require 'keybinding)
 (require 'linh-web-mode)
