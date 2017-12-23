@@ -26,5 +26,7 @@
   (secret-load-keys))
 
 (global-company-mode)
+(setq company-dabbrev-downcase nil)
+
 
 (provide 'global-mode)
