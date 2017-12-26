@@ -30,5 +30,14 @@
 (global-company-mode)
 (setq company-dabbrev-downcase nil)
 
+(require 'dired-details)
+(dired-details-install)
+(setq dired-details-hidden-string "🗀 ")
+
+(require 'neotree)
+(setq neo-smart-open t)
+(setq projectile-switch-project-action 'neotree-projectile-action)
+(global-set-key [f8] 'neotree-toggle)
+
 
 (provide 'global-config)

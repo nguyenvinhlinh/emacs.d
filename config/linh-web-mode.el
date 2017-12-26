@@ -2,6 +2,7 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html.eex\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.component.html\\'" . web-mode))
 (setq web-mode-markup-indent-offset 2)
 (setq web-mode-code-indent-offset 2)
 (setq web-mode-css-indent-offset 2)
@@ -25,4 +26,5 @@
 (add-hook 'before-save-hook 'tide-format-before-save)
 (add-hook 'typescript-mode-hook 'setup-tide-mode)
 (require 'emmet-mode)
+(add-hook 'web-mode 'emmet-mode)
 (provide 'linh-web-mode)
