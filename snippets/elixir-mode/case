@@ -1,0 +1,7 @@
+#name: case do end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: case
+# --
+case $1 do
+$2
+end

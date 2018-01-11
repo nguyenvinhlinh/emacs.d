@@ -1,0 +1,16 @@
+#name: get
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+get:
+  description: $1
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            - success: {
+                $2
+              }
+            - error: {
+                $0
+              }

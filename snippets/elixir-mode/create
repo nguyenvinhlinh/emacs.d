@@ -1,0 +1,7 @@
+#name: def create do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: create
+# --
+def create(conn, %{"$1" => params}) do
+  $0
+end

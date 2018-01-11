@@ -1,0 +1,6 @@
+#name: debug with IEx
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: ie
+# --
+require IEx
+IEx.pry

@@ -1,0 +1,7 @@
+#name: def edit do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: edit
+# --
+def edit(conn, %{"id" => id}) do
+  $0
+end

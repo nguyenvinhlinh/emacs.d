@@ -38,6 +38,7 @@
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 (global-set-key [f8] 'neotree-toggle)
-
+ 
+(yas-global-mode 1)
 
 (provide 'global-config)

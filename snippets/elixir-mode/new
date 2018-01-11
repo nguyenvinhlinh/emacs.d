@@ -1,0 +1,7 @@
+#name: def new do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: new
+# --
+def new(conn, _params) do
+  $0
+end

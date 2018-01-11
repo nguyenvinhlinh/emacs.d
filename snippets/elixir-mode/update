@@ -1,0 +1,7 @@
+#name: def update do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: update
+# --
+def update(conn, $1) do
+  $0
+end

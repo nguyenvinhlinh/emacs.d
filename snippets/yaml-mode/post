@@ -1,0 +1,20 @@
+#name: post
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+# --
+  post:
+    description: submit a new $1
+    queryParameters:
+      date_of_birth:
+        displayName: 
+        type: 
+        description: 
+        example: 
+        required: 
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              - success: {
+                  "status": "OK"
+                  }

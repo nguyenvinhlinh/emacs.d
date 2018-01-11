@@ -1,0 +1,7 @@
+#name: def show do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: show
+# --
+def show(conn, %{"id" => id}) do
+  $0
+end

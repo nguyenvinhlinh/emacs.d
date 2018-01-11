@@ -1,0 +1,7 @@
+#name: make a section
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: section
+# --
+<section class="$1">
+$0
+</section>

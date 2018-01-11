@@ -1,0 +1,7 @@
+#name: for loop
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: for
+# --
+for $1 <- $2 do
+  $0
+end

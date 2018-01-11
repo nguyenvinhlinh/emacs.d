@@ -1,0 +1,7 @@
+#name: def index do ... end
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: index
+# --
+def index(conn, _params) do
+  $0
+end
