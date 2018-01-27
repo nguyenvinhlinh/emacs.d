@@ -29,4 +29,8 @@
 
 (require 'emmet-mode)
 (add-hook 'web-mode-hook 'emmet-mode)
+
+(add-hook 'typescript-mode-hook 'smartparens-mode)
+(add-hook 'elixir-mode-hook 'smartparens-mode)
+
 (provide 'linh-web-mode)
