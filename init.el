@@ -19,7 +19,12 @@
 (add-to-list 'load-path "~/.emacs.d/config/")
 (add-to-list 'load-path "~/.emacs.d/lib/")
 (add-to-list 'load-path "~/.emacs.d/lib/neotree")
+
+
 (require 'theme)
 (require 'global-config)
 (require 'keybinding)
 (require 'linh-web-mode)
+
+(require 'yaml-mode)
+(put 'downcase-region 'disabled nil)
