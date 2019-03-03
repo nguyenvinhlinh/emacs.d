@@ -1,7 +1,4 @@
-#name: """ string """
+#name: description
 #contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
-#key: """
 # --
-"""
-$0
-"""
+description
