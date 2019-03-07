@@ -1,6 +1,7 @@
 (toggle-frame-maximized)
 (exec-path-from-shell-initialize)
 (projectile-global-mode)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (require 'ido)
 (ido-mode t)
@@ -38,7 +39,7 @@
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
 (global-set-key [f8] 'neotree-toggle)
- 
+
 (yas-global-mode 1)
 
 (require 'smartparens-config)
