@@ -11,3 +11,4 @@
 (require 'keybinding)
 (require 'linh-web-mode)
 (require 'yaml-mode)
+(require 'pretty-symbols)
