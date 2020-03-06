@@ -10,5 +10,6 @@
 (require 'global-config)
 (require 'keybinding)
 (require 'linh-web-mode)
+(require 'csgo-navigation-mode)
 (require 'yaml-mode)
 (require 'pretty-symbols)
