@@ -43,5 +43,6 @@
 (yas-global-mode 1)
 
 (require 'smartparens-config)
+(smartparens-global-mode)
 
 (provide 'global-config)

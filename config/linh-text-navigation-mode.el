@@ -20,27 +20,12 @@
 
 (define-minor-mode csgo-navigation-mode
   "csgo-navigation-mode helps"
-  nil
-  "CSGO"
-  csgo-navigation-map
-)
-
-(defun csgo-navigation-toggle ()
-  "Activate/Deactivate csgo-navigation-map"
-  (interactive)
-
-  (if (equal csgo-navigation-map-activated nil)
-      (progn
-        (setq overriding-local-map csgo-navigation-map)
-        (setq csgo-navigation-map-activated t)
-        (message "Activate csgo navigation map"))
-    (progn
-      (setq overriding-local-map nil)
-      (setq csgo-navigation-map-activated nil)
-      (message "Deactivate csgo navigation map"))
-    )
+  :init-value nil
+  :lighter "CSGO"
+  :keymap csgo-navigation-map
+  :global t
   )
 
 
-
-(previous-line 3)
+(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-z") 'csgo-navigation-mode)
