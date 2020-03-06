@@ -1,5 +1,4 @@
 (defvar csgo-navigation-map nil "Keymap for `csgo-navigation-mode")
-(defvar csgo-navigation-map-activated nil "An indicator for `csgo-navigation-map")
 
 (progn
   (setq csgo-navigation-map (make-sparse-keymap))
@@ -23,9 +22,12 @@
   :init-value nil
   :lighter "CSGO"
   :keymap csgo-navigation-map
-  :global t
   )
 
+(add-hook 'csgo-navigation-mode-hook
+          (lambda () (setq buffer-read-only csgo-navigation-mode)))
 
 (global-unset-key (kbd "C-z"))
 (global-set-key (kbd "C-z") 'csgo-navigation-mode)
+
+(provide 'csgo-navigation-mode)
