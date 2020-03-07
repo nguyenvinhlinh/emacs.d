@@ -13,7 +13,7 @@
 (global-unset-key (kbd "C-x C-s"))
 (global-set-key (kbd "C-x C-s") 'delete-trailing-whitespace-and-save-buffer)
 
-
+;; Split window and move cursor focus to new window
 (defun split-window-right-and-other-window ()
   "Split window right and go to other window"
   (interactive "*")
@@ -36,5 +36,9 @@
 (global-unset-key (kbd "C-x 3"))
 (global-set-key (kbd "C-x 2") 'split-window-below-and-other-window)
 (global-set-key (kbd "C-x 3") 'split-window-right-and-other-window)
+
+;; CSGO Navigation Mode
+(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-z") 'csgo-navigation-mode)
 
 (provide 'keybinding)
