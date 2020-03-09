@@ -27,7 +27,4 @@
 (add-hook 'csgo-navigation-mode-hook
           (lambda () (setq buffer-read-only csgo-navigation-mode)))
 
-(global-unset-key (kbd "C-z"))
-(global-set-key (kbd "C-z") 'csgo-navigation-mode)
-
 (provide 'csgo-navigation-mode)
