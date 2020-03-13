@@ -1,7 +1,6 @@
 (toggle-frame-maximized)
 (exec-path-from-shell-initialize)
 (projectile-global-mode)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 (require 'ido)
 (ido-mode t)
@@ -11,8 +10,6 @@
 
 (require 'smex)
 (smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
 
 (require 'dired-x)
 (setq-default dired-omit-files-p t)
@@ -31,14 +28,17 @@
 (global-company-mode)
 (setq company-dabbrev-downcase nil)
 
+(require 'all-the-icons)
+
 (require 'dired-details)
 (dired-details-install)
-(setq dired-details-hidden-string "🗀 ")
+(setq dired-details-hidden-string "")
+(all-the-icons-dired-mode)
 
 (require 'neotree)
 (setq neo-smart-open t)
 (setq projectile-switch-project-action 'neotree-projectile-action)
-(global-set-key [f8] 'neotree-toggle)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 (yas-global-mode 1)
 

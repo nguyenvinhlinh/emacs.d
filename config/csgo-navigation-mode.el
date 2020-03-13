@@ -2,15 +2,22 @@
 
 (progn
   (setq csgo-navigation-map (make-sparse-keymap))
-  (define-key csgo-navigation-map (kbd "w") (lambda () (interactive) (previous-line 3)))
-  (define-key csgo-navigation-map (kbd "a") (lambda () (interactive) (backward-char 3)))
-  (define-key csgo-navigation-map (kbd "s") (lambda () (interactive) (next-line 3)))
-  (define-key csgo-navigation-map (kbd "d") (lambda () (interactive) (forward-char 3)))
+  (define-key csgo-navigation-map (kbd "w") 'previous-line)
+  (define-key csgo-navigation-map (kbd "a") 'backward-char)
+  (define-key csgo-navigation-map (kbd "s") 'next-line)
+  (define-key csgo-navigation-map (kbd "d") 'forward-char)
 
-  (define-key csgo-navigation-map (kbd "W") 'previous-line)
-  (define-key csgo-navigation-map (kbd "A") 'backward-char)
-  (define-key csgo-navigation-map (kbd "S") 'next-line)
-  (define-key csgo-navigation-map (kbd "D") 'forward-char)
+  (define-key csgo-navigation-map (kbd "i") 'previous-line)
+  (define-key csgo-navigation-map (kbd "j") 'backward-char)
+  (define-key csgo-navigation-map (kbd "k") 'next-line)
+  (define-key csgo-navigation-map (kbd "l") 'forward-char)
+
+  (define-key csgo-navigation-map (kbd "W") (lambda () (interactive) (previous-line 3)))
+  (define-key csgo-navigation-map (kbd "A") (lambda () (interactive) (backward-char 3)))
+  (define-key csgo-navigation-map (kbd "S") (lambda () (interactive) (next-line 3)))
+  (define-key csgo-navigation-map (kbd "D") (lambda () (interactive) (forward-char 3)))
+
+
 
   (define-key csgo-navigation-map (kbd "M-d") 'forward-word)
   (define-key csgo-navigation-map (kbd "M-a") 'backward-word)
@@ -20,7 +27,7 @@
 (define-minor-mode csgo-navigation-mode
   "csgo-navigation-mode helps"
   :init-value nil
-  :lighter "CSGO"
+  :lighter " CSGO"
   :keymap csgo-navigation-map
   )
 
