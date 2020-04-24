@@ -24,7 +24,7 @@
 ;; Split Window
 (defun split-window-right-and-other-window ()
   "Split window right and go to other window"
-  (interactive "*")
+  (interactive "@")
   (progn
     (split-window-right)
     (other-window 1)
@@ -33,7 +33,7 @@
 
 (defun split-window-below-and-other-window ()
   "Split window below and go to other window"
-  (interactive "*")
+  (interactive "@")
   (progn
     (split-window-below)
     (other-window 1)
