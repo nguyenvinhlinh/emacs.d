@@ -161,7 +161,7 @@ string then autogenerate a password, and put it in the kill ring
 after adding it to the secret file."
   (interactive
    (list (ido-completing-read "Key or site: " secret-password-keys)
-         (read-input "New password (empty for auto): ")))
+         (read-passwd "New password (empty for auto): ")))
   (unless (member key secret-password-keys)
     (error "This key does not have a password to update"))
   (when (or (not pass) (equal "" pass))
