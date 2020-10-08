@@ -22,7 +22,6 @@
 (defun active-password-manager ()
   "active a simple-secert mode"
   (interactive)
-  (setq secret-password-file "~/.password.gpg")
   (secret-load-keys))
 
 (global-company-mode)

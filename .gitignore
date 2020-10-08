@@ -10,3 +10,4 @@ elpa
 /tramp
 url/
 transient/*
+/config/secret.el

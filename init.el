@@ -13,3 +13,4 @@
 (require 'csgo-navigation-mode)
 (require 'yaml-mode)
 (require 'pretty-symbols)
+(require 'secret)
