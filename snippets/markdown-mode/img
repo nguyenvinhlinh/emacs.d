@@ -1,0 +1,5 @@
+#name: img
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: img
+# --
+{% include image.html url="${1:img.png}" description="${0:description}" %}
