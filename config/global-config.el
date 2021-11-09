@@ -33,6 +33,7 @@
 (dired-details-install)
 (setq dired-details-hidden-string "")
 (all-the-icons-dired-mode)
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
 
 (require 'neotree)
 (setq neo-smart-open t)

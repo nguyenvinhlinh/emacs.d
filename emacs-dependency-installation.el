@@ -7,7 +7,9 @@
       (quote (markdown-mode smart-mode-line-powerline-theme smart-mode-line
                             groovy-mode json-mode smartparens yasnippet
                             exec-path-from-shell tide company smex ido-vertical-mode
-                            projectile magit dracula-theme emmet-mode elixir-mode web-mode))
+                            projectile magit dracula-theme emmet-mode elixir-mode web-mode
+                            all-the-icons all-the-icons-dired
+                            ))
       )
 
 (dolist (package_name package_list)
