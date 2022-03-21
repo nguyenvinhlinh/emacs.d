@@ -13,4 +13,5 @@
 (require 'csgo-navigation-mode)
 (require 'yaml-mode)
 (require 'pretty-symbols)
+(require 'linh-markdown-mode)
 (require 'secret)

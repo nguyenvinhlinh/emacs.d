@@ -1,0 +1,10 @@
+#name: debug
+#contributor: nguyenvinhlinh <nguyenvinhlinh93@gmail.com>
+#key: debug
+# --
+from inspect import currentframe, getframeinfo
+frameinfo = getframeinfo(currentframe())
+
+print(f"DEBUG {frameinfo.filename} @{frameinfo.lineno}")
+print($0)
+print("END")
