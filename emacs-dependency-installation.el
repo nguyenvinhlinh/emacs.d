@@ -8,7 +8,7 @@
                             groovy-mode json-mode smartparens yasnippet
                             exec-path-from-shell tide company smex ido-vertical-mode
                             projectile magit dracula-theme emmet-mode elixir-mode web-mode
-                            all-the-icons all-the-icons-dired sudo-edit tree-sitter
+                            all-the-icons all-the-icons-dired sudo-edit tree-sitter heex-ts-mode
                             ))
       )
 
